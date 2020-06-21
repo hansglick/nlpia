@@ -12,7 +12,7 @@
 
 # Naive Bayes Classifier
 
- * **Naïf?** : On le dit Naïve parce qu'il part de l'hypothèse que toutes les features du modèle sont indépendantes, ce qui n'est en pratique jamais le cas.
+
 
  * **Step 0, calcul des occurences** : Pour chaque mot, on compte le nombre de documents positifs qui contient ce mot. Puis on compte le nombre de documents négatifs qui le contient. Par exemple le mot *happy* apparaît dans 50 documents positifs et dans 15 documents négatifs
 
@@ -69,3 +69,12 @@ Voici les différentes steps à suivre pour construire un modèle de bayes :
 <p align="center">
 <img align = "center" src="img/resume.png">
 </p>
+
+
+***
+
+# Les drawbacks du Bayes Classifier
+
+ * **Naïf?** : On le dit Naïve parce qu'il part de l'hypothèse que toutes les features du modèle sont indépendantes, ce qui n'est en pratique jamais le cas
+
+ * **Problème des classes relatives** : la prédiction d'un NBC dépend beaucoup de l'équilibre des classes du training set. Ce qui pose un problème car celui-ci est souvent 50/50. Il est important de choisir un training set représentatif des documents que l'on va souhaiter classer car la prior joue un rôle important

@@ -24,16 +24,20 @@
 <img align = "center" src="img/basiccond.png" width="312">
 </p>
 
- * **Step 2, naïve bayes inference rule** : cette métrique permet de classer un document. Il s'agit du produit des rapport des probabilités conditionnelles des mots qui constituent le document. Plus la NBIR est élevée, plus il est probable que le document soit positif (**157**):
+ * **Step 2, likelihood** : cette métrique permet de classer un document. Il s'agit du produit des rapport des probabilités conditionnelles des mots qui constituent le document. Plus la NBIR est élevée, plus il est probable que le document soit positif. Le premier terme représente ce qu'on appelle la *prior*. Ce terme est égal à 1 dans le cas de dataset équilibré parfaitement :
 
 <p align="center">
-<img align = "center" src="img/inferencerule.png">
+<img align = "center" src="img/likelihood.png">
 </p>
 
 
 # Notions
 
- * **Les power words** :  sont les mots qui permettent de discriminer. Formellement, ce sont des mots pour lesquelles le rapport entre les probabilités conditionnelles est éloigné de 1. `P(happy|+) / P(happy|-) >> 1`
+ * **ratio, power words** :  sont les mots qui permettent de discriminer. Formellement, ce sont des mots pour lesquelles le rapport entre les probabilités conditionnelles est éloigné de 1. `P(happy|+) / P(happy|-) >> 1`
+
+<p align="center">
+<img align = "center" src="img/ratioill.png">
+</p>
 
  * **Laplacian Smoothing** : les mots qui n'apparaissent pas dans une classe nous posent problème lors du calcul de la NBIR. C'est la raison pour laquelle, on préfère un calcul des probabilités conditionnelles un peu particulier. Le Laplacian Smoothing : 
 

@@ -8,6 +8,7 @@
 <img align = "center" src="img/bayesformula.png" width="480">
 </p>
 
+***
 
 # Naive Bayes Classifier
 
@@ -31,6 +32,17 @@
 </p>
 
 
+* **Step 3, log-likelihood** : la vraisemblance est un produit de valeurs numériques pouvant être très nombreuses comprises entre 0 et 1. Pour des raisons informatiques, il se peut que l'on perdre de l'information lors des arrondis de valeurs avec un grand nombre de décimales (réduction du risque d'underflow). On préfère donc utiliser le logarithme de la vraisemblance pour ces raisons là. A ce moment là, on préfère calculer ce qu'on appelle le lambda de chaque mot. Il est égal au log du rapport des probabilités conditionnelles
+<p align="center">
+<img align = "center" src="img/logl.png">
+</p>
+
+<p align="center">
+<img align = "center" src="img/lambda.png">
+</p>
+
+***
+
 # Notions
 
  * **ratio, power words** :  sont les mots qui permettent de discriminer. Formellement, ce sont des mots pour lesquelles le rapport entre les probabilités conditionnelles est éloigné de 1. `P(happy|+) / P(happy|-) >> 1`
@@ -49,3 +61,11 @@
 <img align = "center" src="img/legendls.png" width="342">
 </p>
 
+
+***
+
+# Naïve Bayes Classifier, le résumé
+Voici les différentes steps à suivre pour construire un modèle de bayes :
+<p align="center">
+<img align = "center" src="img/resume.png">
+</p>

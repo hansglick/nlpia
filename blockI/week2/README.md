@@ -1,0 +1,47 @@
+# Bayes theorem
+
+<p align="center">
+<img align = "center" src="img/bayesex.png" width="677">
+</p>
+
+<p align="center">
+<img align = "center" src="img/bayesformula.png" width="480">
+</p>
+
+
+# Naive Bayes Classifier
+
+ * **Naïf?** : On le dit Naïve parce qu'il part de l'hypothèse que toutes les features du modèle sont indépendantes, ce qui n'est en pratique jamais le cas.
+
+ * **Step 0, calcul des occurences** : Pour chaque mot, on compte le nombre de documents positifs qui contient ce mot. Puis on compte le nombre de documents négatifs qui le contient. Par exemple le mot *happy* apparaît dans 50 documents positifs et dans 15 documents négatifs
+
+ * **Step 1, calcul des probabilités conditionnelles** : On calcule les probabilités conditionnelles de chaque mot. Pour le mot *happy*, on va calculer P(happy|Positif) et P(happy|Negatif) comme le montre l'illustration ci-dessous : 
+<p align="center">
+<img align = "center" src="img/bayesformula.png" width="636">
+</p>
+
+<p align="center">
+<img align = "center" src="img/basiccond.png" width="312">
+</p>
+
+ * **Step 2, naïve bayes inference rule** : cette métrique permet de classer un document. Il s'agit du produit des rapport des probabilités conditionnelles des mots qui constituent le document. Plus la NBIR est élevée, plus il est probable que le document soit positif (**157**):
+
+<p align="center">
+<img align = "center" src="img/inferencerule.png">
+</p>
+
+
+# Notions
+
+ * **Les power words** :  sont les mots qui permettent de discriminer. Formellement, ce sont des mots pour lesquelles le rapport entre les probabilités conditionnelles est éloigné de 1. `P(happy|+) / P(happy|-) >> 1`
+
+ * **Laplacian Smoothing** : les mots qui n'apparaissent pas dans une classe nous posent problème lors du calcul de la NBIR. C'est la raison pour laquelle, on préfère un calcul des probabilités conditionnelles un peu particulier. Le Laplacian Smoothing : 
+
+<p align="center">
+<img align = "center" src="img/laplaciansmoothing.png" width="382">
+</p>
+
+<p align="center">
+<img align = "center" src="img/legendls.png" width="342">
+</p>
+

@@ -74,11 +74,11 @@ Il se trouve que la distanc euclidienne n'est pas toujours la meilleure façon d
 #### Algorithme
 
 bon alors l'idée est la suivante : afin de vérifier que l'embedding de plusieurs mots a bien capturé la signification des mots, on peut avoir envie de les représenter dans un plan en 2 dimensions. A ce moment là, la meilleure façon de faire est de chopper les axes qui vont préserver la plus grande part de variance disponible. C'est la PCA. Voici les différents steps à suivre pour performer une pca :
- 1. Centrer réduire les données
- 2. Computer la matrice de covariance. Chaque élément correspond à la covariance entre deux features. C'est une matrice symétrique
- 3. Perform une SVD afin de trouver les 2 matrices, (1, la matrice U) matrice colonnes de eigen vectors, (2, ma matrice S) matrice diagonale des eigen values,
- 4. Calculer les nouvelles coordonnées en faisant XU avec X la matrice des données. Ensuite on garde les 2 premières colonnes pour représenter les observations en deux dimensions
- 5. Eventuellement tu peux avoir envie de calculer la proportion de variance contenue sur les deux axes retenues. C'est égale à la somme des éléments des 2 premiers éléments de la diagonale de S sur l'ensemble des éléments de la diagonale de S. Il faut quand même s'assurer que les eigen values ont été ordonnées dans la matrice S
+ 1. **Centrer réduire les données**
+ 2. Computer la **matrice de **covariance. Chaque élément correspond à la covariance entre deux features. C'est une matrice symétrique
+ 3. Perform une **SVD afin de trouver les 2 matrices**, (1, la matrice U) matrice colonnes de eigen vectors, (2, ma matrice S) matrice diagonale des eigen values,
+ 4. **Calculer les nouvelles coordonnées** en faisant XU avec X la matrice des données. Ensuite on garde les 2 premières colonnes pour représenter les observations en deux dimensions
+ 5. Eventuellement tu peux avoir envie de **calculer la proportion de variance contenue sur les deux axes retenues**. C'est égale à la somme des éléments des 2 premiers éléments de la diagonale de S sur l'ensemble des éléments de la diagonale de S. Il faut quand même s'assurer que les eigen values ont été ordonnées dans la matrice S
 
 
 #### Python

@@ -30,18 +30,22 @@ Il s'agit de représenter ou bien un mot par un vector. On peut faire ça de deu
  * Afin de calculer la norme d'un array (en gros la distance) : `np.linalg.norm(vecteur)`
  * Afin de calculer les normes colonnes d'une matrice : `np.linalg.norm(m,axis=0)`
  * Afin de calculer les normes lignes d'une matrice : `np.linalg.norm(m,axis=1)`
- 
  * Avec a,b deux arrays, afin de faire un *dot product* :
-  * `np.dot(a,b)` ... préférable car il peut prendre des listes en arguments
-  * `a @ b`
-  * `a.dot(b)`
-
+    * `np.dot(a,b)` ... préférable car il peut prendre des listes en arguments
+    * `a @ b`
+    * `a.dot(b)`
  * Afin de sommer, ou de prendre la moyenne sur les éléments d'un array :
-  * `np.sum(a,axis=0)` ... les éléments d'une colonne
-  * `np.sum(a,axis=1)` ... les éléments d'une ligne
-  * `np.mean()` ... pareil mais pour la moyenne
+    * `np.sum(a,axis=0)` ... les éléments d'une colonne
+    * `np.sum(a,axis=1)` ... les éléments d'une ligne
+    * `np.mean()` ... pareil mais pour la moyenne
 
 
+1. Item
+2. Item
+
+   * Mixed
+   * Mixed  
+3. Item
 ***
 
 ## Euclidean Distance

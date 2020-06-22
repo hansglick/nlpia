@@ -39,13 +39,6 @@ Il s'agit de représenter ou bien un mot par un vector. On peut faire ça de deu
     * `np.sum(a,axis=1)` ... les éléments d'une ligne
     * `np.mean()` ... pareil mais pour la moyenne
 
-
-1. Item
-2. Item
-
-   * Mixed
-   * Mixed  
-3. Item
 ***
 
 ## Euclidean Distance

@@ -16,7 +16,7 @@ Soit X, une matrice de m mots et n features dans une langue "a". Soit Y, une mat
 ## Norme de Froebinius
 
 <p align="center">
-<img align = "center" src="img/frobi.png">
+<img align = "center" src="img/froby.png">
 </p>
 
 

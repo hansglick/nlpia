@@ -47,5 +47,5 @@ En pratique on utilise une smoothing transition matrix comme suit. **Attention**
 Le même esprit pour la matrice des emissions
 
 <p align="center">
-<img align = "center" src="img/emissionsmat.PNG">
+<img align = "center" src="img/emissionmat.PNG">
 </p>

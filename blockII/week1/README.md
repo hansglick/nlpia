@@ -25,3 +25,11 @@ On peut modifier une chaine de caracteres par le biais de 4 opérations possible
 #### Probabilité d'un mot
 
 Métrique simple qui représente la fréquence d'un mot pour un corpus donné. En gros le nombre d'occurences d'un mot sur l'ensemble des mots constituant le corpus
+
+
+*** 
+
+# Whole process
+
+Bon la a part faire le grade pour comprendre de quoi il s'agit je vois pas
+

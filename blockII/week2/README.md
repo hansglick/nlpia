@@ -49,3 +49,9 @@ Le même esprit pour la matrice des emissions
 <p align="center">
 <img align = "center" src="img/emissionmat.PNG">
 </p>
+
+
+## Viterbi Algorithm
+
+## Le lab
+

@@ -10,19 +10,19 @@ Un modèl qui prédit le mot qui vient sachant le début de la phrase ou bien le
 Les sets de N mots qui se suivent dans une phrase ou un corpus
 
 
-# Introduction de N gram probability
+## Introduction de N gram probability
 
 <p align="center">
 <img align = "center" src="img/ngramp.PNG">
 </p>
 
-# Probability of a sequence
+## Probability of a sequence
 
 <p align="center">
-<img align = "center" src="img/pseq.PNG">
+<img align = "center" src="img/pseq1.PNG">
 </p>
 
-# Probability of a sequence, approximation
+## Probability of a sequence, approximation
 En pratique, il est très difficile d'obtenir certaines probabilités conditionnelles intermédiaires. Pour calculer la probabilité de la séquence **"J'aime bien boire du thé glacé l'été"**. Il est très peu probable que la séquence de mots **"J'aime bien boire du thé glacé l'"** n'est pas forcément présent dans le corpus d'entraînement.  Dans ces cas là, on calcule ce qu'on appelle une approximation de la probabilité :
 
 <p align="center">
@@ -35,7 +35,7 @@ En pratique, il est très difficile d'obtenir certaines probabilités conditionn
 
 
 # Start and End sentence signs
-Pour calculer les probabilités conditionnelles des mots se trouvant au début des phrases, on manque généralement de contexte (pas assez de mots précédents). Pour parer à ce problème, on rajoute en début de phrases autant de start tokens, **<s>**, que nécessaire. De la meuf façon, on rajoute un ending token à la fin de chaque phrase, **</s>**
+Pour calculer les probabilités conditionnelles des mots se trouvant au début des phrases, on manque généralement de contexte (pas assez de mots précédents). Pour parer à ce problème, on rajoute en début de phrases autant de start tokens, **< s >** que nécessaire. De la meuf façon, on rajoute un ending token à la fin de chaque phrase, **< / s >**
 
 <p align="center">
 <img align = "center" src="img/stok.PNG">
